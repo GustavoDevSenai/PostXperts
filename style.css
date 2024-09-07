@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none; /* Inicialmente oculto */
+    flex-direction: column;
+    height: 400px;
+}
+
+.chat-box {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.chat-message.user {
+    text-align: right;
+}
+
+.chat-message.assistant {
+    text-align: left;
+}
+
+#user-input {
+    width: calc(100% - 5px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    width:100%;
+    padding: 10px;
+    margin-top: 2px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.loading-message {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+.loading-message::before {
+    content: '...';
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% { content: '...'; }
+    33% { content: '..'; }
+    66% { content: '.'; }
+    100% { content: '...'; }
+}
+
+
+img{
+    height: 100vh;
+}
+
+.principal{
+    display: flex;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.principal-interno{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}

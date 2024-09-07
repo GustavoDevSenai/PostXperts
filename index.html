@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostXperts</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+  </head>
+
+  <body>
+
+    <div class="principal">
+        <img src="./imagens/imagem.png" alt="">
+        <div class="principal-interno">
+            <h1>PostXperts</h1>
+            <p>Uma Solução que vai revolucionar o atendimento nas Agências dos Correios</p>
+            <p>Use nossa Assistente virtual clicando no icone...</p>
+        </div>
+      
+    </div>
+    
+    <img src="" alt="">
+    <div class="chat-icon" id="chat-icon" onclick="toggleChat()">
+      💬
+    </div>
+    <div class="chat-container" id="chat-container">
+      <div class="chat-box" id="chat-box"></div>
+      <div id="loading-message" class="loading-message">Assistente está pensando...</div>
+      <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+      <button onclick="processarPergunta()">Enviar</button>
+    </div>
+    <script src="./script.js"></script>
+
+
+  </body>
+
+</html>
